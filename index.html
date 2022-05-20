@@ -13,6 +13,14 @@
         <button data-bind="click: decrease">-</button>
         <button data-bind="click: increase">+</button>
     </div>
+    <div>
+        <ul data-bind="foreach: inventory">
+            <li>
+                <span data-bind="text: $data.name"></span>
+                <span data-bind="text: $data.age"></span>
+            </li>
+        </ul>
+    </div>
     <script type="text/javascript" src="node_modules\knockout\build\output\knockout-latest.js"></script>
     <script src="main.js"></script>
 </body>

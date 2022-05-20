@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="something" id="entryPoint">
+        <h1>hello, <span data-bind="text: username"></span></h1>
+        <p data-bind="text: count"></p>
+        <button data-bind="click: decrease">-</button>
+        <button data-bind="click: increase">+</button>
+    </div>
+    <script type="text/javascript" src="node_modules\knockout\build\output\knockout-latest.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
